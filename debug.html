@@ -1,0 +1,19 @@
+<table>
+			<thead></thead>
+			<tbody id="tbod"></tbody>
+		</table>
+		
+var tbod = document.querySelector("#tbod");
+for(i=0;i<D; ++i) {
+	var tr = document.createElement("tr");
+	for(j=0;j<D; ++j) {
+		tr.appendChild(document.createElement("td"));
+	}
+	tbod.appendChild(tr);
+}
+function V(r,c,v) {
+	var target = document.querySelector("#tbod > tr:nth-child("+(r+1)+") > td:nth-child("+(c+1)+")");
+	target.style.backgroundColor = "black";
+	M[r*L+c]=1;
+	return V;
+}
