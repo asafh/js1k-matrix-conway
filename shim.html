@@ -14,11 +14,10 @@
 		</script>
 		<script>
 // start of submission //
-
 a.translate(D=c.height=c.width=720, 0); //D is the dimension (square), set canvas size to it, translate
 T=10, //Character Size
 L=D/T, //# of Characters in a dimension
-M = new Array(L*L), //Current state
+M = [], //Current state
 Z=[-1,0,1]; //Immediate steps permutations 
 
 a.scale(-1, 1);
